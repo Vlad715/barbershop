@@ -1,0 +1,376 @@
+html,
+body {
+    min-width: 960px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #000000 url("../img/body-bg.png") no-repeat center top;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-header {
+    margin-bottom: 60px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: flex-start;
+    width: 780px;
+    min-height: 70px;
+}
+
+.main-navigation a {
+    display: block;
+    padding: 25px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    background: #242424;
+}
+
+.main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.user-block {
+    position: relative;
+    max-width: 140px;
+}
+
+.user-block a {
+    display: block;
+    padding: 25px 20px;
+    padding-left: 50px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #242424;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: transparent url("../img/icon-login.png") no-repeat;
+    opacity: 0.3;
+}
+
+.login:hover::before {
+    opacity: 1;
+}
+
+.user-block a:hover {
+    background: #242424;
+}
+
+.user-block a {
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.index-logo {
+    width: 368px;
+    min-height: 204px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+.features {
+    min-height: 180px;
+    margin-bottom: 80px;
+}
+
+.features-item {
+    float: left;
+    width: 300px;
+    min-height: 175px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.features-name {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.features-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.index-content {
+    margin-bottom: 35px;
+    padding: 50px 80px;
+    color: #000000;
+    background: #f8f5F2 url("../img/pattern-white.jpg");
+}
+
+.index-content-left {
+    float: left;
+    width: 380px;
+    min-height: 330px;
+}
+
+.index-content-right {
+    float: right;
+    width: 300px;
+    min-height: 330px;
+}
+
+.index-content-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.news-preview {
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+    list-style: none;
+}
+
+.news-preview li {
+    margin-bottom: 25px;
+}
+
+.news-preview p {
+    margin-bottom: 0;
+}
+
+.news-preview time {
+    margin-bottom: none;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #663d15
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background-color: #000000;
+}
+
+.gallery {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-form input {
+    width: 106px;
+    padding: 7px 15px;
+    margin-bottom: 20px;
+    font: inherit;
+    color: inherit;
+    text-transform: inherit;
+    background-color: #f9F6F3;
+    border: 2px solid #000000;
+}
+
+.appointment-form input:focus {
+    border: 2px solid #663d15
+}
+
+.appointment-form .btn {
+    width: 100%;
+}
+
+.main-footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    background: #252525 url("../img/pattern-black.jpg");
+}
+
+.footer-contacts {
+    width: 320px;
+    margin-left: 10px;
+}
+
+.footer-contacts a {
+    color: #ffffff;
+}
+
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+.footer-social {
+    width: 160px;
+    text-align: center;
+}
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+}
+
+.social-btn-vk {
+    background: #000000 url("../img/vk.png") no-repeat;
+    background-position: center;
+}
+
+.social-btn-fb {
+    background: #000000 url("../img/fb.png") no-repeat;
+    background-position: center;
+}
+
+.social-btn-inst {
+    background: #000000 url("../img/inst.png") no-repeat;
+    background-position: center;
+}
+
+.social-btn:hover,
+.social-btn:active {
+    background-color: #663d15
+}
+
+.footer-copyright {
+    width: 150px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+}
