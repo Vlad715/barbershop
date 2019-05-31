@@ -1,0 +1,49 @@
+<! DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" conteent="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="tasks-wrap mt-5">
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Add todo
+                    </div>
+                    <div class="card-body">
+                        <form name="addTodoItem">
+                            <div class="form-group">
+                                <label for="todoText">Text</label>
+                                <input type="text" class="form-control" id="todoText">
+                                <div class="invalid-feedback">
+                                    Please enter some text
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card mb-3 list-card">
+                    <div class="card-header">
+                         Task list
+                    </div>
+                <ul class="list-group">
+                    <!-- <li class="list-group-item">Cras justo odio</li> -->
+                </ul>
+                </div>
+                     <button class="btn btn-primary clear-btn">Clear list</button>
+            </div>
+        </section> 
+   
+        <!-- <script src="plugin.js"></script> -->
+        <!-- <script src="homeWork.js"></script> -->
+        <script src="DOM.js"></script>
+    </body>
+</html>
